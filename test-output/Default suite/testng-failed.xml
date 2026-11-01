@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestApi_Tests.TC01_userTestcases">
+      <class name="RestApi_Tests.TC02_userDataDrivenTestcases">
         <methods>
-          <include name="testUpdateUser"/>
+          <include name="testdeleteuser" invocation-numbers="0 1"/>
           <include name="testpostuser"/>
           <include name="setData"/>
         </methods>
-      </class> <!-- RestApi_Tests.TC01_userTestcases -->
+      </class> <!-- RestApi_Tests.TC02_userDataDrivenTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

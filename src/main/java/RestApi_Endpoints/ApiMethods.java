@@ -2,7 +2,6 @@ package RestApi_Endpoints;
 import static io.restassured.RestAssured.given;
 
 import RestApi_Payload.UserPayloadPojo;
-import RestApi_Utilities.DataSetup;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 

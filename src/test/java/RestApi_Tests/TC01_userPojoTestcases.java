@@ -6,17 +6,17 @@ import org.testng.annotations.Test;
 
 import RestApi_Endpoints.ApiMethods;
 import RestApi_Payload.UserPayloadPojo;
-import RestApi_Utilities.DataSetup;
+import RestApi_TestData.PojoDataSetup;
 import io.restassured.response.Response;
 
-public class TC01_userTestcases {
+public class TC01_userPojoTestcases {
     ApiMethods apimthd;
-	DataSetup data;
+	PojoDataSetup data;
 	UserPayloadPojo body1,body2;
 	@BeforeClass
 	public void setData()
 	{
-	 data = new DataSetup();	
+	 data = new PojoDataSetup();	
 	 apimthd = new ApiMethods();	 
 	 body1 = data.setUserData();
      System.out.println("Generated User ID: " + body1.getId());

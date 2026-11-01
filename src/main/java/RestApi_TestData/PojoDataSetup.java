@@ -1,8 +1,8 @@
-package RestApi_Utilities;
+package RestApi_TestData;
 
 import com.github.javafaker.Faker;
 import RestApi_Payload.UserPayloadPojo;
-public class DataSetup {
+public class PojoDataSetup {
 
 	Faker fak;
 	UserPayloadPojo userpojo;
