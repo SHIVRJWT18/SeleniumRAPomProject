@@ -1,0 +1,58 @@
+
+<Configuration status="WARN" monitorInterval="30">
+
+    <!-- Properties -->
+    <Properties>
+        <Property name="basePath">logs</Property>
+        <Property name="logPattern">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %c{1}:%L - %msg%n
+        </Property>
+    </Properties>
+
+    <!-- Appenders -->
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${logPattern}"/>
+        </Console>
+
+        <!-- Rolling File Appender -->
+        <RollingFile name="FileAppender"
+                     fileName="${basePath}/automation.log"
+                     filePattern="${basePath}/automation-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="${logPattern}"/>
+
+            <Policies>
+                <!-- Roll over when file reaches 10 MB -->
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+
+                <!-- Daily rollover -->
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+            </Policies>
+
+            <DefaultRolloverStrategy max="10">
+                <Delete basePath="${basePath}" maxDepth="1">
+                    <IfFileName glob="automation-*.log.gz"/>
+                    <IfLastModified age="30d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+
+        </RollingFile>
+
+    </Appenders>
+
+    <!-- Loggers -->
+    <Loggers>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

@@ -26,6 +26,7 @@ public class TC02_userDataDrivenTestcases {
     public void testpostuser(UserPayloadPojo body1) {
         Response res = apimthd.createUser(body1);
         res.then().log().body();
+        System.out.println("Created Username: " + body1.getUsername());
         Assert.assertEquals(res.getStatusCode(), 200);
     }
 
@@ -34,7 +35,8 @@ public class TC02_userDataDrivenTestcases {
     @Test(
         priority = 2,
         dataProvider = "TestingUsernamesData",
-        dataProviderClass = ExcelDataProviders.class 
+        dataProviderClass = ExcelDataProviders.class ,
+        enabled = true
     )
     public void testdeleteuser(String username) {
 
@@ -43,5 +45,7 @@ public class TC02_userDataDrivenTestcases {
         res.then()
            .statusCode(200) 
            .log().body();
+        System.out.println("Deleted Username: " + username);
+
     }
 }
