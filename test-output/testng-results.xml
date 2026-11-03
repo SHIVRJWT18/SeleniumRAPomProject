@@ -1,61 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-01T12:22:49 IST" name="Default suite" finished-at="2026-11-01T12:22:57 IST" duration-ms="8299">
+  <suite started-at="2026-11-03T10:01:35 IST" name="Default suite" finished-at="2026-11-03T10:01:49 IST" duration-ms="13502">
     <groups>
     </groups>
-    <test started-at="2026-11-01T12:22:49 IST" name="Default test" finished-at="2026-11-01T12:22:57 IST" duration-ms="8299">
+    <test started-at="2026-11-03T10:01:35 IST" name="Default test" finished-at="2026-11-03T10:01:49 IST" duration-ms="13502">
       <class name="RestApi_Tests.TC02_userDataDrivenTestcases">
-        <test-method is-config="true" signature="setData()[pri:0, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-01T12:22:49 IST" name="setData" finished-at="2026-11-01T12:22:49 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:35 IST" name="setData" finished-at="2026-11-03T10:01:35 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method signature="testpostuser(RestApi_Payload.UserPayloadPojo)[pri:1, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-01T12:22:49 IST" name="testpostuser" data-provider="TestingAllData" finished-at="2026-11-01T12:22:51 IST" duration-ms="2056" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void RestApi_Tests.TC02_userDataDrivenTestcases.testpostuser(RestApi_Payload.UserPayloadPojo)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: testpostuser([RestApi_Payload.UserPayloadPojo arg0])
-Arguments: [(java.lang.String) 1101,(java.lang.String) ApiUserX,(java.lang.String) FNameX,(java.lang.String) LNameX,(java.lang.String) NameX1@hotmail.com,(java.lang.String) namex@1,(java.lang.String) 1234567890]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void RestApi_Tests.TC02_userDataDrivenTestcases.testpostuser(RestApi_Payload.UserPayloadPojo)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: testpostuser([RestApi_Payload.UserPayloadPojo arg0])
-Arguments: [(java.lang.String) 1101,(java.lang.String) ApiUserX,(java.lang.String) FNameX,(java.lang.String) LNameX,(java.lang.String) NameX1@hotmail.com,(java.lang.String) namex@1,(java.lang.String) 1234567890]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+        <test-method signature="testpostuser(RestApi_Payload.UserPayloadPojo)[pri:1, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:37 IST" name="testpostuser" data-provider="TestingAllData" finished-at="2026-11-03T10:01:40 IST" duration-ms="3120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RestApi_Payload.UserPayloadPojo@aed0151]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testpostuser -->
-        <test-method signature="testdeleteuser(java.lang.String)[pri:2, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-01T12:22:52 IST" name="testdeleteuser" data-provider="TestingUsernamesData" finished-at="2026-11-01T12:22:55 IST" duration-ms="3399" status="FAIL">
+        <test-method signature="testpostuser(RestApi_Payload.UserPayloadPojo)[pri:1, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:40 IST" name="testpostuser" data-provider="TestingAllData" finished-at="2026-11-03T10:01:42 IST" duration-ms="1570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RestApi_Payload.UserPayloadPojo@19bedeb8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpostuser -->
+        <test-method signature="testpostuser(RestApi_Payload.UserPayloadPojo)[pri:1, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:42 IST" name="testpostuser" data-provider="TestingAllData" finished-at="2026-11-03T10:01:44 IST" duration-ms="1585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RestApi_Payload.UserPayloadPojo@14422d9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpostuser -->
+        <test-method signature="testdeleteuser(java.lang.String)[pri:2, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:44 IST" name="testdeleteuser" data-provider="TestingUsernamesData" finished-at="2026-11-03T10:01:45 IST" duration-ms="1548" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,55 +52,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.java:569)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.java:932)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:163)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:168)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at RestApi_Tests.TC02_userDataDrivenTestcases.testdeleteuser(TC02_userDataDrivenTestcases.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testdeleteuser -->
-        <test-method signature="testdeleteuser(java.lang.String)[pri:2, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-01T12:22:55 IST" name="testdeleteuser" data-provider="TestingUsernamesData" finished-at="2026-11-01T12:22:57 IST" duration-ms="1922" status="FAIL">
+        <test-method signature="testdeleteuser(java.lang.String)[pri:2, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:45 IST" name="testdeleteuser" data-provider="TestingUsernamesData" finished-at="2026-11-03T10:01:47 IST" duration-ms="1528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,51 +63,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.java:569)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.java:932)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:163)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.java:168)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at RestApi_Tests.TC02_userDataDrivenTestcases.testdeleteuser(TC02_userDataDrivenTestcases.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeleteuser -->
+        <test-method signature="testdeleteuser(java.lang.String)[pri:2, instance:RestApi_Tests.TC02_userDataDrivenTestcases@38af9828]" started-at="2026-11-03T10:01:47 IST" name="testdeleteuser" data-provider="TestingUsernamesData" finished-at="2026-11-03T10:01:48 IST" duration-ms="1517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiUserY]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testdeleteuser -->

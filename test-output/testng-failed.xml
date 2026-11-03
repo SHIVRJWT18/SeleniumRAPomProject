@@ -5,8 +5,7 @@
     <classes>
       <class name="RestApi_Tests.TC02_userDataDrivenTestcases">
         <methods>
-          <include name="testdeleteuser" invocation-numbers="0 1"/>
-          <include name="testpostuser"/>
+          <include name="testdeleteuser"/>
           <include name="setData"/>
         </methods>
       </class> <!-- RestApi_Tests.TC02_userDataDrivenTestcases -->
